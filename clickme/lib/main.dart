@@ -97,6 +97,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
 
           children: <Widget>[
+            const Card(color: Colors.pink, child: Text('This is a card!')),
             const Text(
               'You have clicked the button this many times:',
             ),
