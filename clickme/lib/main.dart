@@ -97,7 +97,10 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
 
           children: <Widget>[
-            const Card(color: Colors.pink, child: Text('This is a card!')),
+            const Card(
+              color: Colors.pink,
+              child: Text('This is a card!'),
+            ),
             const Text(
               'You have clicked the button this many times:',
             ),
@@ -108,6 +111,9 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               'Wow, what a simple button.',
             ),
+            FloatingActionButton(
+                onPressed: _incrementCounter,
+                child: const Icon(Icons.attach_money)),
           ],
         ),
       ),
@@ -115,7 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      ),
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
